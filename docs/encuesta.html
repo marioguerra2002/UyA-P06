@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Encuesta sobre JoJo's Bizarre Adventure</title>
+    <link rel="icon" href="icono.png" type="image/x-icon">
+  </head>
+  <body>
+    <h1>Encuesta sobre JoJo's Bizarre Adventure</h1>
+
+    <p>Por favor, selecciona tus opciones favoritas:</p>
+
+    <form>
+      <h2>Partes de JoJo's Bizarre Adventure</h2>
+      <label>
+        <input type="checkbox" name="parte" value="parte1">
+        Parte 1: Phantom Blood
+      </label><br>
+      <label>
+        <input type="checkbox" name="parte" value="parte2">
+        Parte 2: Battle Tendency
+      </label><br>
+      <label>
+        <input type="checkbox" name="parte" value="parte3">
+        Parte 3: Stardust Crusaders
+      </label><br>
+      <label>
+        <input type="checkbox" name="parte" value="parte4">
+        Parte 4: Diamond is Unbreakable
+      </label><br>
+      <label>
+        <input type="checkbox" name="parte" value="parte5">
+        Parte 5: Golden Wind
+      </label><br>
+      <label>
+        <input type="checkbox" name="parte" value="parte6">
+        Parte 6: Stone Ocean
+      </label><br>
+      <label>
+        <input type="checkbox" name="parte" value="parte7">
+        Parte 7: Steel Ball Run
+      </label><br>
+      <label>
+        <input type="checkbox" name="parte" value="parte8">
+        Parte 8: JoJolion
+      </label><br>
+
+      <h2>Personajes favoritos</h2>
+      <label>
+        <input type="radio" name="personaje" value="jonathan">
+        Jonathan Joestar
+      </label><br>
+      <label>
+        <input type="radio" name="personaje" value="joseph">
+        Joseph Joestar
+      </label><br>
+      <label>
+        <input type="radio" name="personaje" value="jotaro">
+        Jotaro Kujo
+      </label><br>
+      <label>
+        <input type="radio" name="personaje" value="giorno">
+        Giorno Giovanna
+      </label><br>
+      <label>
+        <input type="radio" name="personaje" value="jolyne">
+        Jolyne Cujoh
+      </label><br>
+      <label>
+        <input type="radio" name="personaje" value="johnny">
+        Johnny Joestar
+      </label><br>
+      <label>
+        <input type="radio" name="personaje" value="josuke">
+        Josuke Higashikata (partes 4 y 8)
+      </label><br>
+
+      <h2>¿Cuál es tu stand de JoJo's Bizarre Adventure?</h2>
+      <select name="stand_favorito" id="stand_favorito">
+        <option value="star_platinum">Star Platinum</option>
+        <option value="the_world">The World</option>
+        <option value="crazy_diamond">Crazy Diamond</option>
+        <option value="king_crimson">King Crimson</option>
+        <option value="golden_experience_requiem">Golden Experience Requiem</option>
+        <option value="heavenly_moon">Heavenly Moon</option>
+        <option value="killer_queen">Killer Queen</option>
+        <option value="weather_report">Weather Report</option>
+      </select>
+    </form>
+    <br> <br>
+    <button type="submit" id="enviar-encuesta">Enviar encuesta</button>
+    <script>
+      const botonEnvio = document.getElementById("enviar-encuesta");
+      botonEnvio.addEventListener("click", function(evento) {
+        if (!confirm("¿Estás seguro/a de que quieres enviar la encuesta?")) {
+          evento.preventDefault();
+        }
+      });
+    </script>
+  </body>
+</html>
+      

@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1>Alimentos</h1>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Queso
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">El queso es un alimento sólido que se obtiene por maduración de la cuajada de la leche animal una vez eliminado el suero</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Jamón
+                  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Hamon (波紋, hamon?), también conocido como Sendo (仙道, Lit. "Camino de El Ermitaño/Asistente"?), es una antigua forma de artes marciales.
+                  A través de la respiración auto-controlada, el <div class="alert alert-primary" role="alert">Hamon</div> puede enlazar a personas entrenadas con la energía del Sol; en oposición polar a la energía ejercida por los vampiros, zombis y los Hombres del Pilar.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h1>Encuesta</h1>
+          <button type="button" class="btn btn-outline-primary" onclick="window.open('encuesta.html', '_blank')">Realiza la encuesta</button> <button type="button" class="btn-close" aria-label="Close"></button>
+          <div class="card" style="width: 18rem;">
+            <img src="https://static.wikia.nocookie.net/jojo/images/8/88/Bow%26ArrowAV.png/revision/latest?cb=20161015043458&path-prefix=es" class="card-img-top">
+            <div class="card-body">
+              <h5 class="card-title">Flecha</h5>
+              <p class="card-text">Una flecha es un proyectil que se dispara con un arco. Está compuesta por una punta (de tiro sobre diana o caza), un astil y un emplumado que normalmente es de tres plumas.</p>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            JJ?
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">JoJos</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      JJ?
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="https://www.google.com/search?sa=X&bih=438&biw=952&hl=es&q=Jonathan+Joestar&stick=H4sIAAAAAAAAAONgFuLSz9U3yEtJyTU0VeLRT9c3NMorKyioKjLXkslOttIvKQOi-IKi_PSixFyr5IzEosTkktSi4kWsAl75eYklGYl5Cl75qcUliUUAQFF0gE0AAAA&ved=2ahUKEwjNlNHWpv39AhWtVKQEHUATCQEQ9OUBegQIMRAJ">Jonathan Joestar</a></li>
+                      <li><a class="dropdown-item" href="https://www.google.com/search?sa=X&bih=438&biw=952&hl=es&q=Joseph+Joestar&stick=H4sIAAAAAAAAAONgFuLSz9U3yEtJyTU0VeIEsdMzjNMqtGSyk630S8qAKL6gKD-9KDHXKjkjsSgxuSS1qHgRK59XfnFqQYaCV35qcUliEQCrFHN9SAAAAA&ved=2ahUKEwjNlNHWpv39AhWtVKQEHUATCQEQ9OUBegQIMRAL">Joseph Joestar</a></li>
+                      <li><a class="dropdown-item" href="https://www.google.com/search?sa=X&bih=438&biw=952&hl=es&q=Jotaro+Kujo&stick=H4sIAAAAAAAAAONgFuLSz9U3yEtJyTU0VeIEsdPTq7KMtGSyk630S8qAKL6gKD-9KDHXKjkjsSgxuSS1qHgRK7dXfkliUb6Cd2lWPgCk606vRQAAAA&ved=2ahUKEwjNlNHWpv39AhWtVKQEHUATCQEQ9OUBegQIMRAD">Jotaro Kujo</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <h1>Pajarita</h1>
+          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar?</a> <div class="spinner-border text-danger" role="status"><span class="visually-hidden">Loading...</span></div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=lRrOLTHu-ew">Is this</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=623JGFAYZ3w">A JoJos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.youtube.com/watch?v=mi33SvaDfB4">Reference?</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <button type="button" class="btn btn-primary" id="liveToastBtn">Conclusión</button>
+          <div class="toast-container position-fixed bottom-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+              <div class="toast-header">
+                <img src="" class="rounded me-2" alt="">
+                <strong class="me-auto">Conclusión</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Mirate JoJos Bizarre Adventure
+              </div>
+            </div>
+          </div>
+          <script>
+            const toastTrigger = document.getElementById('liveToastBtn')
+            const toastLiveExample = document.getElementById('liveToast')
+      
+            if (toastTrigger) {
+              const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+              toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+              })
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
